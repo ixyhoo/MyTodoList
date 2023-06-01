@@ -6,4 +6,5 @@ form.addEventListener('submit', (e) => {
    e.preventDefault();
 
    list.innerHTML += `<li>${item.value}</li>`;
+   item.value = '';
 });
