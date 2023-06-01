@@ -13,7 +13,11 @@ form.addEventListener('submit', (e) => {
    item.value = ''; 
    //console.log('item added', item.value); // Pour vérifier si un nouvel item est bien ajouté
 });
-
+//remove element
 list.addEventListener('click', (e) => {
-    e.target.remove();
+    if (e.target.classList.contains('checked')) {
+        e.target.remove();
+    } else {
+        e.target.classList.add('checked');
+    }
 });
