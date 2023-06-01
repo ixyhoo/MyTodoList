@@ -10,5 +10,10 @@ form.addEventListener('submit', (e) => {
    e.preventDefault();
 
    list.innerHTML += `<li>${item.value}</li>`;
+   item.value = ''; 
    //console.log('item added', item.value); // Pour vérifier si un nouvel item est bien ajouté
+});
+
+list.addEventListener('click', (e) => {
+    e.target.remove();
 });
