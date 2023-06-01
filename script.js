@@ -1,7 +1,8 @@
 const form = document.querySelector('form');
+const item = document.querySelector('#item');
 
 form.addEventListener('submit', (e) => {
    e.preventDefault();
-console.log(item.value);
-   // list.innerHTML = `<li>${item.value}</li>`;
+
+   list.innerHTML = `<li>${item.value}</li>`;
 });
